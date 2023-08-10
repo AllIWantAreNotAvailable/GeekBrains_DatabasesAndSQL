@@ -1,0 +1,7 @@
+order_id,order_status,order_summary
+1,OPEN,"Order is in open state"
+2,OPEN,"Order is in open state"
+3,CLOSED,"Order is closed"
+4,OPEN,"Order is in open state"
+5,CANCELLED,"Order is cancelled"
+6,OPEN,"Order is in open state"

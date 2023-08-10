@@ -1,0 +1,7 @@
+order_id,employee_id,amount,order_status
+1,e03,15.00,OPEN
+2,e01,25.00,OPEN
+3,e05,100.00,CLOSED
+4,e02,22.18,OPEN
+5,e04,9.50,CANCELLED
+6,e04,99.99,OPEN
