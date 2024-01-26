@@ -1,0 +1,9 @@
+SELECT
+    COLOR AS Color,
+    COUNT(REGNUM) AS Count
+FROM
+    AUTO
+WHERE
+    MARK IN ('BMW', 'LADA')
+GROUP BY COLOR
+;
