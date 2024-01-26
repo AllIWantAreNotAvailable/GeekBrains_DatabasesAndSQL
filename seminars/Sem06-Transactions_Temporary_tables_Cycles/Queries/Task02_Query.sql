@@ -3,14 +3,18 @@ CREATE PROCEDURE numbers()
 BEGIN
     DECLARE n INT default 0;
     DROP TEMPORARY TABLE IF EXISTS nums;
-    CREATE TEMPORARY TABLE nums (n INT);
+    CREATE TEMPORARY TABLE nums
+    (
+        n INT
+    );
 
-    WHILE n < 10 DO
-    SET n = n + 2;
-    INSERT INTO nums VALUES(n);
-    END WHILE;
+    WHILE n < 10
+        DO
+            SET n = n + 2;
+            INSERT INTO nums VALUES (n);
+        END WHILE;
 
-SELECT * FROM nums;
+    SELECT * FROM nums;
 END $$
 DELIMITER
 ;
