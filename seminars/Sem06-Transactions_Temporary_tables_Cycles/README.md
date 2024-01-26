@@ -9,6 +9,9 @@
 ### Решение
 
 ```SQL
+USE Sem06
+;
+
 DELIMITER $$
 CREATE PROCEDURE times(seconds INT)
 BEGIN
@@ -16,9 +19,9 @@ BEGIN
     DECLARE hours INT default 0;
     DECLARE minutes INT default 0;
 
-    WHILE seconds >= 84600 DO
-    SET days = seconds / 84600;
-    SET seconds = seconds % 84600;
+    WHILE seconds >= 86400 DO
+    SET days = seconds / 86400;
+    SET seconds = seconds % 86400;
     END WHILE;
 
     WHILE seconds >= 3600 DO
@@ -43,7 +46,7 @@ CALL times(123456)
 **Output:**
 |days|hours|minutes|seconds|
 |----|-----|-------|-------|
-|1   |11   |48     |36     |
+|1   |10   |18     |36     |
 
 
 
