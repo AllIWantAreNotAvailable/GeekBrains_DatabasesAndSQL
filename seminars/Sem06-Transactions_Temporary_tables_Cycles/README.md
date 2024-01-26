@@ -46,7 +46,7 @@ CALL times(123456)
 **Output:**
 |days|hours|minutes|seconds|
 |----|-----|-------|-------|
-|1   |10   |18     |36     |
+|1   |10   |17     |36     |
 
 
 
